@@ -1,0 +1,26 @@
+# UAE Parking Locator robots.txt
+User-agent: *
+Allow: /
+Allow: /*/parking/
+Allow: /dubai/parking/
+Allow: /abu-dhabi/parking/
+Allow: /sharjah/parking/
+Allow: /ajman/parking/
+Allow: /ras-al-khaimah/parking/
+Allow: /fujairah/parking/
+Allow: /umm-al-quwain/parking/
+
+# Prevent duplicate content from pagination
+Disallow: /*page=*
+Disallow: /parking/*page=*
+Disallow: /*/parking?*
+Disallow: /search?*
+
+# Admin and utility pages
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login
+Disallow: /logout
+
+# Allow main sitemap
+Sitemap: https://uaeparking.com/sitemap.xml
